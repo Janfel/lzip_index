@@ -1,0 +1,4 @@
+Makefile
+lzip_indexer
+lzip_comp_index.*
+*.txt
