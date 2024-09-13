@@ -72,7 +72,7 @@ lzip_index_search(struct lzip_index const *index, uint64_t data_offset)
 
 	if (index->indexable_data_size) {
 		size_t member_index = data_offset / index->indexable_data_size;
-		return &index->members[index->member_count - member_index];
+		return &index->members[index->member_count - member_index - 1];
 	}
 
 	return bsearch(
